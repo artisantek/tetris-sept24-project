@@ -43,11 +43,11 @@ pipeline {
         //     } 
         // }
 
-        // stage('Docker Build') {
-        //     steps {
-        //             dockerImageBuild('$dockerImage', '$dockerTag')
-        //     }
-        // }
+        stage('Docker Build') {
+             steps {
+                     dockerImageBuild('$dockerImage', '$dockerTag')
+             }
+         }
 
         // stage('Snyk Scan') {
         //     steps {
