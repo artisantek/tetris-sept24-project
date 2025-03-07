@@ -44,10 +44,10 @@ pipeline {
         // }
 
         stage('Docker Build') {
-             steps {
-                     dockerImageBuild('$dockerImage', '$dockerTag')
-             }
-         }
+            steps {
+                    dockerImageBuild('$dockerImage', '$dockerTag')
+            }
+        }
 
         // stage('Snyk Scan') {
         //     steps {
